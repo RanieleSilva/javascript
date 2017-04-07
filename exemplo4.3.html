@@ -1,0 +1,41 @@
+<html>
+   <head>
+     <meta charset="utf-8">
+   </head>
+<body bgcolor="#000000">
+<center>
+<font size="6"face="tohoma"color="#FF00FF">
+<h1> Estrutura Condicional (IF/ELSE)</h1>
+<script>
+var altura=1.58;
+var peso=62;
+var imc=peso/(altura*altura);
+if(imc<18.5)
+{
+window.document.write(imc+" Classificação magreza"); 
+} 
+else if((imc>18.5)&&(imc<24.9))
+{
+window.document.write(imc+" Classificação saudavél"); 
+} 
+else if((imc>25.0)&&(imc<29.9))
+{
+window.document.write(imc+" Classificação sobrepeso");
+}
+else if((imc>30.0)&&(imc<34.9))
+{
+window.document.write(imc+" Classificação obsidade grauI");
+}
+else if((imc>35.5)&&(ima<39.9))
+{
+window.document.write(imc+" Classificação obsidade grauII(severa)");
+}
+else if(imc>=40)
+{
+window.document.write(imc+" Classificação obsidade grauIII (morbida)");
+}
+</script>
+</font>
+</center>
+</body>
+</html>
