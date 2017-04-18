@@ -1,0 +1,25 @@
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Exemplo14.2</title>
+	<script>
+		function alter_txt(){
+			var x= window.document.getElementById('finame');
+			x.value=x.value.toUpperCase();
+		}
+	</script>
+</head>
+<body bgcolor=#000000>
+<center>
+<font color="red">
+<h1>JavaScript Eventos</h1>
+<div>
+	Digite seu nome: <input type="text" id="finame" onchange="alter_txt()">
+	<p>Clique fora da caixa para altera o texto em maíusculo!</p>
+	
+
+</div>
+</font>
+</center>
+</body>
+</html>

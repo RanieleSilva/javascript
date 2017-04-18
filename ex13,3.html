@@ -1,0 +1,44 @@
+<html>
+
+<head>
+<title>Exemplo13.3</title>
+
+<meta charset="utf-8">
+</head>
+
+<body bgcolor=#552413>
+<center>
+
+<H1>Estados e UFs</H1>
+
+<form name='form1'>
+
+<br>
+
+<script>
+var estados = {AC:"Acre", AL:"Alagoas", AM:"Amazonas", AP:"Amapá", BA:"Bahia", 
+CE:"Ceará", DF:"Distrito Fedreal", ES:"Espitiro Santo", GO:"Goias", MA:"Maranhão",
+MT:"Mato Grosso", MS:"Mato Grosso do Sul", MG:"Minas Gerais", PA:"Pará",PE:"Pernambuco",
+PI:"Piaui", RJ:"Rio de Janeiro", RN:"Rio Grande do Norte", RO:"Rondônia", RS:"Rio Grande do Sul",
+RR:"Roraima", SC:"Santa Catarina", SE:"Sergipe", SP:"São Paulo", TO:"Tocantins"};
+window.document.write("<select name=UF id=optUF>");
+function evento()
+{
+var res = window.document.getElementById('optUF').value;
+alert("Você escolheu o estado de UF: "+res);
+}
+for(uf in estados)
+{
+window.document.write("<option value="+uf+">"+estados[uf]+"</option>");
+}
+window.document.write("</select>");
+</script>
+<input type="button" value="ok" onclick="evento()"/>
+</form>
+</center>
+</body>
+</html>
+
+    Contact GitHub API Training Shop Blog About 
+
+
